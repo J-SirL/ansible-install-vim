@@ -1,0 +1,12 @@
+---
+# need to fix @todo git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+# @todo ~/.fzf/install
+- name: Config Vim with plugins
+  hosts: localhost
+  gather_facts: yes
+  become: no
+
+  tasks:
+    - name: Configure Vim using role
+      import_role:
+        name: vim
